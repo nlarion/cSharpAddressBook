@@ -7,7 +7,18 @@
 <body>
   <div class="container">
     <h1>A New Contact Was Created:</h1>
-    <h3>List contact details here</h3>
+    <h3>@Model.GetName</h3>
+      <ul>
+        <li>@Model.GetPhone()</li>
+        <li>@Model.GetEmail()</li>
+        <h3>Address</h3>
+        <ul>
+          <li>@Model.GetAddress().GetStreet()</li>
+          <li>@Model.GetAddress().GetCity()</li>
+          <li>@Model.GetAddress().GetState()</li>
+          <li>@Model.GetAddress().GetZip()</li>
+        </ul>
+      </ul>
     <a href="/create_contact">Create a New Contact</a>
     <a href="/list_contacts">List All Contacts</a>
   </div>

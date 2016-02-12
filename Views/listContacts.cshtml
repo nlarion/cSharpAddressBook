@@ -7,7 +7,23 @@
 <body>
   <div class="container">
     <h1>A List of All Your Contacts :)</h1>
-    <h3>List all contact here</h3>
+    <ul>
+      @foreach (var contact in Model)
+      {
+        <li>@contact.GetName()</a></li>
+        <ul>
+          <li>@contact.GetPhone()</li>
+          <li>@contact.GetEmail()</li>
+          <h3>Address</h3>
+          <ul>
+            <li>@contact.GetAddress().GetStreet()</li>
+            <li>@contact.GetAddress().GetCity()</li>
+            <li>@contact.GetAddress().GetState()</li>
+            <li>@contact.GetAddress().GetZip()</li>
+          </ul>
+        </ul>
+      }
+    </ul>
     <a href="/create_contact">Create a New Contact</a>
     <a href="/contacts_deleted">Delete All Contacts</a>
   </div>
