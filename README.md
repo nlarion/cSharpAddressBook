@@ -12,8 +12,7 @@
 * Ability to get/delete all existing Contact ojects.
 * On form submission the new Contact Object is saved to a static list
 
-This project was developed during a "Code Review" session at Epicodus, which is a solo project designed to test our knowledge of the materials learned over the previous week's study. It's an honor to be apart of a coding community where people are genuinely interested in what they're doing. A link to the live site is provided below:
-##http://nlarion.github.io/cSharpAddressBook
+This project was developed during a "Code Review" session at Epicodus, which is a solo project designed to test our knowledge of the materials learned over the previous week's study. It's an honor to be apart of a coding community where people are genuinely interested in what they're doing.
 
 ## Setup/Installation Requirements
 - Clone this repository.
