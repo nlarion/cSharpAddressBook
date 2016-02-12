@@ -20,7 +20,7 @@ namespace ContactList
         return View["deleteContacts.cshtml"];
       };      
       Post["/contact_created"] = _ => {
-        Address address = new Address(Request.Form["street"],Request.Form["city"],Request.Form["state"],Request.Form["zip"]);
+        Address address = new Address(Request.Form["street"],Request.Form["city"],Request.Form["state"],int.Parse(Request.Form["zip"]));
         Contact newContact = new Contact(address, Request.Form["name"],Request.Form["phone"], Request.Form["email"]);
         return View["contactCreated.cshtml", newContact];
       };
