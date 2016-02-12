@@ -10,11 +10,11 @@
     <ul>
       @foreach (var contact in Model)
       {
-        <li>@contact.GetName()</a></li>
+        <li><h2>@contact.GetName()</a></h2></li>
         <ul>
           <li>@contact.GetPhone()</li>
           <li>@contact.GetEmail()</li>
-          <h3>Address</h3>
+          <h3>Address:</h3>
           <ul>
             <li>@contact.GetAddress().GetStreet()</li>
             <li>@contact.GetAddress().GetCity()</li>
