@@ -1,6 +1,7 @@
 using Nancy;
 using System.Collections.Generic;
 using ContactList.Objects;
+using ContactList.Addresses;
 
 namespace ContactList
 {

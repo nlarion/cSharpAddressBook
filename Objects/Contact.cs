@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using ContactList.Addresses;
 
 namespace ContactList.Objects
 {
@@ -43,6 +44,14 @@ namespace ContactList.Objects
     public void SetEmail(string email)
     {
       _email = email;
+    }   
+    public string GetAddress()
+    {
+      return _address;
+    }
+    public void SetEmail(Address address)
+    {
+      _address = address;
     }
     public int GetId()
     {
