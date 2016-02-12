@@ -1,0 +1,41 @@
+body {
+  background-color: #bdc3c7;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-family: monospace;
+  border: white 10px dashed;
+  background-color: #34495e;
+  color: white;
+}
+
+button {
+  margin: 10px;
+}
+
+a {
+  margin: 10px;
+}
+.whiteBox {
+  padding: 10px;
+  margin: 10px; 
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contacts :nth-of-type(even){
+  background-color: #7f8c8d;
+}
+.contacts :nth-of-type(odd){
+  background-color: #e74c3c;
+}
+.contact {
+  border-radius: 10px;
+  border: #7f8c8d 10px solid;
+  margin: 10px;
+}

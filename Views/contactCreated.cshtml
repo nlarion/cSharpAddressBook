@@ -3,29 +3,35 @@
 <head>
   <title>Address Book - List Contacts</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/Content/css/styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>You Created a Contact!</h1>
-    <h2>@Model.GetName()</h2>
-      <ul>
-        <li>Phone Number: @Model.GetPhone()</li>
-        <li>Email: @Model.GetEmail()</li>
-        <h3>Address:</h3>
-        <ul>
-          <li>Street: @Model.GetAddress().GetStreet()</li>
-          <li>City: @Model.GetAddress().GetCity()</li>
-          <li>State: @Model.GetAddress().GetState()</li>
-          <li>Zip: @Model.GetAddress().GetZip()</li>
-        </ul>
-      </ul>
-    <p>
-      <a href="/create_contact">Create a New Contact</a>
-    </p>
-    <p>
-      <a href="/list_contacts">List All Contacts</a>
-    </p>
-    
+    <div class="whiteBox">
+      <h1>You Created a Contact!</h1>
+      <div class="contacts">
+        <div class="contact">
+          <h2>@Model.GetName()</h2>
+          <ul>
+            <li>Phone Number: @Model.GetPhone()</li>
+            <li>Email: @Model.GetEmail()</li>
+            <h3>Address:</h3>
+            <ul>
+              <li>Street: @Model.GetAddress().GetStreet()</li>
+              <li>City: @Model.GetAddress().GetCity()</li>
+              <li>State: @Model.GetAddress().GetState()</li>
+              <li>Zip: @Model.GetAddress().GetZip()</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <a href="/create_contact" class="btn btn-info" role="button">Create a New Contact</a>
+      </p>
+      <p>
+        <a href="/list_contacts" class="btn btn-info" role="button">List All Contacts</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
