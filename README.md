@@ -1,6 +1,6 @@
 #cSharpAddressBook
 
-####This is a website for address book application written in C#
+####This is a website for address book application written in cSharp
 ####By: Neil Larion
 
 ## Description
