@@ -39,7 +39,7 @@ namespace ContactList.Addresses
     {
       _state = state;
     }
-    public string GetZip()
+    public int GetZip()
     {
       return _zip;
     }

@@ -7,7 +7,7 @@
 <body>
   <div class="container">
     <h1>Enter the information below to add a new Contact:</h1>
-    <form>
+    <form action="/contact_created" method="post">
       <h2>Details</h2>
       <h3>Name:</h3>
       <input type="text" name="name"></input>
@@ -17,11 +17,11 @@
       <input type="text" name="email"></input>
       <h3>Address:</h3>
       <input type="text" name="street"></input>
-      <h3>Name:</h3>
+      <h3>City:</h3>
       <input type="text" name="city"></input>
-      <h3>Name:</h3>
+      <h3>State:</h3>
       <input type="text" name="state"></input>
-      <h3>Name:</h3>
+      <h3>Zip:</h3>
       <input type="text" name="zip"></input><br>
       <button type="submit">Submit</button>
     </form>

@@ -15,7 +15,7 @@ namespace ContactList
       Get["/create_contact"] = _ => {
         return View["createContact.cshtml"];
       };      
-      Get["/contacts_delted"] = _ => {
+      Get["/contacts_deleted"] = _ => {
         Contact.Clear();
         return View["deleteContacts.cshtml"];
       };      
