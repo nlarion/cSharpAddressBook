@@ -2,26 +2,26 @@ namespace ContactList.Addresses
 {
   public class Address
   {
-    private string _address;
+    private string _street;
     private string _city;
     private string _state;
     private int _zip;
 
-    public Address(string address, string city, string state, int zip)
+    public Address(string street = "", string city = "Portland", string state = "Oregon", int zip = 97211)
     {
-      _address =  address;
+      _street =  street;
       _city = city;
       _state = state;
       _zip = zip;
     }
 
-    public string GetAddress()
+    public string GetStreet()
     {
-      return _address;
+      return _street;
     }
-    public void SetAddress(string address)
+    public void SetStreet(string street)
     {
-      _address = address;
+      _street = street;
     }
     public string GetCity()
     {
@@ -33,7 +33,7 @@ namespace ContactList.Addresses
     }
     public string GetState()
     {
-      return _address;
+      return _state;
     }
     public void SetState(string state)
     {

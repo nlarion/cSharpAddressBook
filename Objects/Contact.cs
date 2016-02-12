@@ -12,7 +12,7 @@ namespace ContactList.Objects
     private Address _address;
     private int _id;
 
-    public Contact(string name, string phone, string email, Address address)
+    public Contact(Address address, string name = "John Smith", string phone = "555-555-5555", string email = "email@email.com")
     {
       _name = name;
       _phone = phone;
@@ -45,7 +45,7 @@ namespace ContactList.Objects
     {
       _email = email;
     }   
-    public string GetAddress()
+    public Address GetAddress()
     {
       return _address;
     }
