@@ -6,17 +6,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>A New Contact Was Created:</h1>
+    <h1>You Created a Contact!</h1>
     <h2>@Model.GetName()</h2>
       <ul>
-        <li>@Model.GetPhone()</li>
-        <li>@Model.GetEmail()</li>
+        <li>Phone Number: @Model.GetPhone()</li>
+        <li>Email: @Model.GetEmail()</li>
         <h3>Address:</h3>
         <ul>
-          <li>@Model.GetAddress().GetStreet()</li>
-          <li>@Model.GetAddress().GetCity()</li>
-          <li>@Model.GetAddress().GetState()</li>
-          <li>@Model.GetAddress().GetZip()</li>
+          <li>Street: @Model.GetAddress().GetStreet()</li>
+          <li>City: @Model.GetAddress().GetCity()</li>
+          <li>State: @Model.GetAddress().GetState()</li>
+          <li>Zip: @Model.GetAddress().GetZip()</li>
         </ul>
       </ul>
     <p>
