@@ -6,17 +6,43 @@ namespace ContactList.Objects
   {
     private static List<Contact> _instances = new List<Contact> {};
     private string _name;
+    private string _email;
+    private string _phone;
+    private Address _address;
     private int _id;
 
-    public Contact(string ContactName)
+    public Contact(string name, string phone, string email, Address address)
     {
-      _name = ContactName;
+      _name = name;
+      _phone = phone;
+      _email = email;
+      _address = address;
       _instances.Add(this);
       _id = _instances.Count;
     }
     public string GetName()
     {
       return _name;
+    }
+    public void SetName(string name)
+    {
+      _name = name;
+    }    
+    public string GetPhone()
+    {
+      return _phone;
+    }
+    public void SetPhone(string phone)
+    {
+      _phone = phone;
+    }    
+    public string GetEmail()
+    {
+      return _email;
+    }
+    public void SetEmail(string email)
+    {
+      _email = email;
     }
     public int GetId()
     {
